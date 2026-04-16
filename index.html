@@ -4,6 +4,9 @@
 <head>
     <title>Alan Cooke</title>
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <style>
         /* --- General Styles --- */
         body {
@@ -48,6 +51,25 @@
             color: yellow;
         }
 
+        /* --- Bluesky Icon Section --- */
+        .social-top {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0 10px 0;
+        }
+
+        .social-top a {
+            font-size: 32px;
+            color: #00a8ff;
+            text-decoration: none;
+            transition: transform 0.2s, color 0.2s;
+        }
+
+        .social-top a:hover {
+            color: #66d1ff;
+            transform: scale(1.15);
+        }
+
         /* --- Top Game Cover Navigation --- */
         .game-nav {
             display: flex;
@@ -66,7 +88,6 @@
             max-width: 220px;
         }
 
-        /* Keep titles under images white */
         .game-nav a div {
             margin-top: 5px;
             font-weight: bold;
@@ -99,7 +120,6 @@
             display: block;
         }
 
-        /* --- Responsive Adjustments --- */
         @media (max-width: 650px) {
             .game-nav {
                 flex-direction: column;
@@ -137,6 +157,13 @@
 
     <h1>Alan Cooke</h1>
 
+    <!-- Bluesky Icon (Centered Above Game Section) -->
+    <div class="social-top">
+        <a href="https://bsky.app/profile/alancooke.bsky.social" target="_blank" rel="noopener noreferrer" title="Bluesky">
+            <i class="fa-brands fa-bluesky"></i>
+        </a>
+    </div>
+
     <h2>Playdate Catalog Games (Click To Jump To That Game)</h2>
 
     <div class="game-nav">
@@ -154,82 +181,33 @@
             <img src="images/retro-breaker.png" alt="Snow Globe">
             <div>Retro Breaker</div>
         </a>
-
     </div>
 
     <h2>Dev Logs</h2>
     <p><a href="https://itch.io/blog/1419876/my-first-dev-log">My First Dev Log</a></p>
 
     <h2>Playdate Recommendations</h2>
-    <p>If you are new to Playdate or just want some game recommendations here is a list of my top Playdate games (as of 3/6/2026). These are the ones I enjoyed the most, I try to buy and play other Playdate games when I am not actively developing anything. I am not including anything I was involved with or anything from Season 1 since you get all those games automatically with the device. There are some great games in the first season. Anyway, here is the list:</p>
-
-    <p><a href="https://play.date/games/tiny-turnip/">Tiny Turnip</a> - Tiny Turnip is a climbing adventure that beautifully integrates all of the Playdate's controls...</p>
-
-    <p><a href="https://play.date/games/devils-on-the-moon-pinball/">Devils On The Moon Pinball</a> - Devils On The Moon Pinball is a beautifully, meticulously crafted masterpiece...</p>
-
-    <p><a href="https://play.date/games/root-bear/">Root Bear</a> - Root Bear is a Playdate staple that challenges you to create the perfect pour...</p>
-
-    <p><a href="https://play.date/games/fulcrum-defender/">Fulcrum Defender</a> - Fulcrum Defender is a simple defense-style shooter...</p>
-
-    <p><a href="https://play.date/games/under-the-castle/">Under The Castle</a> - Under The Castle is my favorite turn-based RPG on the Playdate...</p>
-
-    <p><a href="https://play.date/games/dig-dig-dino/">Dig! Dig! Dino!</a> - Dig! Dig! Dino! tasks players with uncovering dinosaur bones...</p>
-
-    <p><a href="https://play.date/games/icy-dungeon/">Icy Dungeon</a> - Icy Dungeon features 70 carefully designed levels...</p>
-
-    <p><a href="https://play.date/games/water-flow/">Water Flow</a> - Water Flow is a deceptively simple puzzle game...</p>
+    <p>If you are new to Playdate or just want some game recommendations...</p>
 
     <h2 id="cannonballkid">Cannonball Kid (with Beth Cooke)</h2>
 
-    <p>
-        Cannonball Kid began as a simple puzzle-driven game and evolved into a beautifully animated story...
-    </p>
-
-    <p>Cannonball Kid Game Guide (Click Game Art Below):</p>
-    <a href="files/cannonball-kid-guide.docx" download>
-        <img src="images/guide-cover.gif" class="game-image">
-    </a>
-
-    <p>Cannonball Kid Screenshots:</p>
-    <img src="images/cannonballkid1.gif" class="game-image"><br>
-    <img src="images/cannonballkid2.gif" class="game-image"><br>
-    <img src="images/cannonballkid3.gif" class="game-image"><br>
-    <img src="images/cannonballkid4.gif" class="game-image"><br>
-    <img src="images/cannonballkid5.gif" class="game-image">
+    <p>Cannonball Kid began as a simple puzzle-driven game...</p>
 
     <h2 id="fortress">Fortress (with Beth Cooke)</h2>
 
-    <p>
-        Fortress was my first major project for the Panic Playdate...
-    </p>
+    <p>Fortress was my first major project for the Panic Playdate...</p>
 
     <p>Destination Playdate's Video On Fortress:</p>
     <div class="youtube">
-        <a href="https://www.google.com/search?q=playdate+console+destination+playdate+review+video+of+fortress&oq=playdate+console+destination+playdate+review+video+of+fortress&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCTE3ODg1ajBqNKgCAbACAQ&client=ms-android-google&sourceid=chrome-mobile&ie=UTF-8" target="_blank">
+        <a href="https://www.youtube.com/watch?v=Yg4fxwwClwc" target="_blank" rel="noopener noreferrer">
             <img src="images/fortress-video.png" class="game-image">
             <div class="play-button"></div>
         </a>
     </div>
 
-    <br>
-    <p>The Official Fortress Game Guide:</p>
-    <img src="images/fortress-guide.png" class="game-image"><br>
-
-    <p>Fortress Screenshots:</p>
-    <img src="images/fortress1.gif" class="game-image"><br>
-    <img src="images/fortress2.gif" class="game-image"><br>
-    <img src="images/fortress3.gif" class="game-image"><br>
-    <img src="images/fortress4.gif" class="game-image"><br>
-    <img src="images/fortress5.gif" class="game-image"><br>
-
-    <p>Concept Sketches For Fortress:</p>
-    <img src="images/fortress6.png" class="game-image">
-
     <h2 id="retrobreaker">Retro Breaker (with Cyndi Cooke)</h2>
 
-    <p>
-        A fresh take on a classic brick breaker game with different power-ups... in development!
-    </p>
+    <p>A fresh take on a classic brick breaker game...</p>
 
 </body>
 
