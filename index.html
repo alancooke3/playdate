@@ -4,8 +4,8 @@
 <head>
     <title>Alan Cooke</title>
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
     <style>
         /* --- General Styles --- */
@@ -34,7 +34,7 @@
             margin-bottom: 20px;
         }
 
-        /* --- Link Colors (FIXED: no visited/active color change) --- */
+        /* --- Link Colors --- */
         a {
             color: yellow;
         }
@@ -51,7 +51,7 @@
             color: yellow;
         }
 
-        /* --- Bluesky Icon Section --- */
+        /* --- Bluesky Icon --- */
         .social-top {
             display: flex;
             justify-content: center;
@@ -60,15 +60,15 @@
         }
 
         .social-top a {
-            font-size: 34px;
+            font-size: 32px;
             color: #00a8ff;
             text-decoration: none;
-            transition: transform 0.2s, color 0.2s;
+            transition: transform 0.2s ease, opacity 0.2s ease;
         }
 
         .social-top a:hover {
-            color: #66d1ff;
             transform: scale(1.15);
+            opacity: 0.85;
         }
 
         /* --- Top Game Cover Navigation --- */
@@ -111,7 +111,6 @@
             border-color: white;
         }
 
-        /* --- Game Content Images --- */
         .game-image {
             width: 100%;
             max-width: 400px;
@@ -121,7 +120,6 @@
             display: block;
         }
 
-        /* --- Responsive Adjustments --- */
         @media (max-width: 650px) {
             .game-nav {
                 flex-direction: column;
@@ -159,10 +157,10 @@
 
     <h1>Alan Cooke</h1>
 
-    <!-- Bluesky Icon (Centered Above Playdate Catalog Section) -->
+    <!-- Bluesky Icon (Bootstrap Icons ONLY as requested) -->
     <div class="social-top">
-        <a href="https://bsky.app/" target="_blank" rel="noopener noreferrer" title="Bluesky">
-            <i class="fa-solid fa-cloud"></i>
+        <a href="https://bsky.app/" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-bluesky"></i>
         </a>
     </div>
 
@@ -190,6 +188,7 @@
     <p><a href="https://itch.io/blog/1419876/my-first-dev-log">My First Dev Log</a></p>
 
     <h2>Playdate Recommendations</h2>
+
     <p>If you are new to Playdate or just want some game recommendations here is a list of my top Playdate games (as of 3/6/2026). These are the ones I enjoyed the most, I try to buy and play other Playdate games when I am not actively developing anything. I am not including anything I was involved with or anything from Season 1 since you get all those games automatically with the device. There are some great games in the first season. Anyway, here is the list:</p>
 
     <p><a href="https://play.date/games/tiny-turnip/">Tiny Turnip</a> - Tiny Turnip is a climbing adventure that beautifully integrates all of the Playdate's controls. You play as a small turnip exploring a large map filled with different obstacles and secrets. The game introduces fresh mechanics and plenty of collectibles. Your turnip has a variety of moves including climbing, swimming, rolling, and flinging. The experience is beautifully crafted and well balanced, with a memorable soundtrack that evolves as you discover new areas of the map.</p>
@@ -210,13 +209,11 @@
 
     <h2 id="cannonballkid">Cannonball Kid (with Beth Cooke)</h2>
 
-    <p>
-        Cannonball Kid began as a simple puzzle-driven game and evolved into a beautifully animated story about a kid trying to save Earth from an alien invasion. In the game, you help Cannonball Kid shoot down alien ships by hacking into their network and manipulating the fields displayed on the screen. Different field types alter the trajectory of the cannonballs the kid fires, creating a unique puzzle-shooter experience that grows increasingly challenging as you progress.
-        <br><br>
-        The game features five distinct areas (or four if you skip the tutorial) and culminates in a mini-boss battle against the alien mothership. Cannonball Kid has two possible endings: a good ending and a bad ending. If the player triggers a Game Over at any point, the game automatically concludes with the bad ending. Successfully completing all levels without a Game Over unlocks the good ending, and the menu display updates from the default alien artwork to one of three campaign awards.
-        <br><br>
-        Playing the game is simple, just select the tutorial at the beginning of the game. If you skipped the tutorial the main fields you interact with during the game have a black background and will be pointing north, south, east, or west. You use the Playdate's crank to scroll through the interactive fields and change their direction so that you can hit the alien ships with Cannonball Kid's cannonball. The selected field will be highlighted, just change the direction using the d-pad to your desired direction. Other fields will just change the cannonball's direction but cannot be changed with the d-pad. For example, static fields do not move or change, rotating fields rotate 90 degrees after they change the cannonball's direction, and holographic fields change the cannonball's direction but are destroyed upon impact. Figuring out how to hit the alien ships is key.
-    </p>
+    <p>Cannonball Kid began as a simple puzzle-driven game and evolved into a beautifully animated story about a kid trying to save Earth from an alien invasion. In the game, you help Cannonball Kid shoot down alien ships by hacking into their network and manipulating the fields displayed on the screen. Different field types alter the trajectory of the cannonballs the kid fires, creating a unique puzzle-shooter experience that grows increasingly challenging as you progress.</p>
+
+    <p>The game features five distinct areas (or four if you skip the tutorial) and culminates in a mini-boss battle against the alien mothership. Cannonball Kid has two possible endings: a good ending and a bad ending. If the player triggers a Game Over at any point, the game automatically concludes with the bad ending. Successfully completing all levels without a Game Over unlocks the good ending, and the menu display updates from the default alien artwork to one of three campaign awards.</p>
+
+    <p>Playing the game is simple, just select the tutorial at the beginning of the game. If you skipped the tutorial the main fields you interact with during the game have a black background and will be pointing north, south, east, or west. You use the Playdate's crank to scroll through the interactive fields and change their direction so that you can hit the alien ships with Cannonball Kid's cannonball. The selected field will be highlighted, just change the direction using the d-pad to your desired direction. Other fields will just change the cannonball's direction but cannot be changed with the d-pad. For example, static fields do not move or change, rotating fields rotate 90 degrees after they change the cannonball's direction, and holographic fields change the cannonball's direction but are destroyed upon impact. Figuring out how to hit the alien ships is key.</p>
 
     <p>Cannonball Kid Game Guide (Click Game Art Below):</p>
     <a href="files/cannonball-kid-guide.docx" download>
@@ -224,23 +221,17 @@
     </a>
 
     <p>Cannonball Kid Screenshots:</p>
-    <img src="images/cannonballkid1.gif" class="game-image">
-    <br>
-    <img src="images/cannonballkid2.gif" class="game-image">
-    <br>
-    <img src="images/cannonballkid3.gif" class="game-image">
-    <br>
-    <img src="images/cannonballkid4.gif" class="game-image">
-    <br>
+    <img src="images/cannonballkid1.gif" class="game-image"><br>
+    <img src="images/cannonballkid2.gif" class="game-image"><br>
+    <img src="images/cannonballkid3.gif" class="game-image"><br>
+    <img src="images/cannonballkid4.gif" class="game-image"><br>
     <img src="images/cannonballkid5.gif" class="game-image">
 
     <h2 id="fortress">Fortress (with Beth Cooke)</h2>
 
-    <p>
-        Fortress was my first major project for the Panic Playdate. I created the game in <a href="https://play.date/pulp">Pulp</a>, and my sister contributed the vast majority of the art. It was an absolute blast to make! The game is packed with secrets, collectibles, enemy types, and puzzles. You can <a href="https://play.date/games/fortress">buy the game on catalog</a> now.
-        <br><br>
-        The reference sheet for the game is below. You can save the image to your desktop or zoom in on your browser to read it. Destination Playdate also created a walkthrough of the game, a link to it is provided below too.
-    </p>
+    <p>Fortress was my first major project for the Panic Playdate. I created the game in <a href="https://play.date/pulp">Pulp</a>, and my sister contributed the vast majority of the art. It was an absolute blast to make! The game is packed with secrets, collectibles, enemy types, and puzzles. You can <a href="https://play.date/games/fortress">buy the game on catalog</a> now.</p>
+
+    <p>The reference sheet for the game is below. You can save the image to your desktop or zoom in on your browser to read it. Destination Playdate also created a walkthrough of the game, a link to it is provided below too.</p>
 
     <p>Destination Playdate's Video On Fortress:</p>
     <div class="youtube">
@@ -251,29 +242,25 @@
     </div>
 
     <br>
+
     <p>The Official Fortress Game Guide:</p>
     <img src="images/fortress-guide.png" class="game-image">
-    <br>
-    <p>Fortress Screenshots:</p>
-    <img src="images/fortress1.gif" class="game-image">
-    <br>
-    <img src="images/fortress2.gif" class="game-image">
-    <br>
-    <img src="images/fortress3.gif" class="game-image">
-    <br>
-    <img src="images/fortress4.gif" class="game-image">
-    <br>
-    <img src="images/fortress5.gif" class="game-image">
 
     <br>
+
+    <p>Fortress Screenshots:</p>
+    <img src="images/fortress1.gif" class="game-image"><br>
+    <img src="images/fortress2.gif" class="game-image"><br>
+    <img src="images/fortress3.gif" class="game-image"><br>
+    <img src="images/fortress4.gif" class="game-image"><br>
+    <img src="images/fortress5.gif" class="game-image"><br>
+
     <p>Concept Sketches For Fortress:</p>
     <img src="images/fortress6.png" class="game-image">
 
     <h2 id="retrobreaker">Retro Breaker (with Cyndi Cooke)</h2>
 
-    <p>
-        A fresh take on a classic brick breaker game with different power-ups... in development!
-    </p>
+    <p>A fresh take on a classic brick breaker game with different power-ups... in development!</p>
 
 </body>
 
