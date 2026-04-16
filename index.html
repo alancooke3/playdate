@@ -48,12 +48,12 @@
             color: yellow;
         }
 
-        /* --- Bluesky Icon Link (Using images/bluesky-icon.png) --- */
+        /* --- Large Bluesky Icon Link --- */
         .social-top {
             display: flex;
             justify-content: center;
-            margin-top: 20px;
-            margin-bottom: 20px;
+            margin-top: 30px;
+            margin-bottom: 30px;
         }
 
         .social-top a {
@@ -62,13 +62,13 @@
         }
 
         .social-top img {
-            width: 48px;  /* Set size for visibility */
+            width: 240px; /* Scaled 5x larger than 48px */
             height: auto;
             display: block;
         }
 
         .social-top a:hover {
-            transform: scale(1.1);
+            transform: scale(1.05); /* Subtle scale for a larger image */
             opacity: 0.9;
         }
 
@@ -130,9 +130,12 @@
             .game-nav a {
                 max-width: 90%;
             }
+            
+            .social-top img {
+                width: 150px; /* Responsive size for mobile */
+            }
         }
 
-        /* --- YouTube Link --- */
         .youtube {
             position: relative;
             max-width: 400px;
@@ -148,12 +151,6 @@
         .youtube a:hover img {
             border-color: white;
         }
-
-        /* Fallback text for video link if desired */
-        .video-link-text {
-            color: yellow;
-            text-decoration: underline;
-        }
     </style>
 </head>
 
@@ -162,7 +159,7 @@
     <h1>Alan Cooke</h1>
 
     <div class="social-top">
-        <a href="https://bsky.app/profile/alancooke.bsky.social" target="_blank" rel="noopener noreferrer" title="Bluesky">
+        <a href="https://bsky.app/" target="_blank" rel="noopener noreferrer" title="Bluesky">
             <img src="images/bluesky-icon.png" alt="Bluesky Icon">
         </a>
     </div>
@@ -240,7 +237,7 @@
     <div class="youtube">
         <a href="https://www.youtube.com/watch?v=Yg4fxwwClwc" target="_blank">
             <img src="images/fortress-video.png" class="game-image" alt="Fortress Video Preview">
-            </a>
+        </a>
     </div>
 
     <br>
