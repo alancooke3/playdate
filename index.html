@@ -50,19 +50,27 @@
             color: yellow;
         }
 
-        /* --- Bluesky Icon --- */
+        /* --- Bluesky Icon Fix --- */
         .social-top {
             display: flex;
             justify-content: center;
             margin-top: 20px;
             margin-bottom: 10px;
+            width: 100%;
         }
 
         .social-top a {
-            font-size: 32px;
+            font-size: 40px; /* Slightly larger for visibility */
             color: #00a8ff;
             text-decoration: none;
             transition: transform 0.2s ease, opacity 0.2s ease;
+            display: inline-block;
+            line-height: 1;
+        }
+
+        .social-top i {
+            display: inline-block;
+            vertical-align: middle;
         }
 
         .social-top a:hover {
@@ -157,7 +165,7 @@
     <h1>Alan Cooke</h1>
 
     <div class="social-top">
-        <a href="https://bsky.app/" target="_blank" rel="noopener noreferrer" aria-label="Bluesky">
+        <a href="https://bsky.app/" target="_blank" rel="noopener noreferrer">
             <i class="bi bi-bluesky"></i>
         </a>
     </div>
