@@ -55,22 +55,21 @@
             display: flex;
             justify-content: center;
             margin-top: 20px;
-            margin-bottom: 10px;
-            width: 100%;
+            margin-bottom: 20px;
         }
 
         .social-top a {
-            font-size: 40px; /* Slightly larger for visibility */
             color: #00a8ff;
             text-decoration: none;
             transition: transform 0.2s ease, opacity 0.2s ease;
             display: inline-block;
-            line-height: 1;
         }
 
-        .social-top i {
-            display: inline-block;
-            vertical-align: middle;
+        /* Ensuring the SVG is sized correctly */
+        .social-top svg {
+            width: 42px;
+            height: 42px;
+            fill: currentColor;
         }
 
         .social-top a:hover {
@@ -165,8 +164,10 @@
     <h1>Alan Cooke</h1>
 
     <div class="social-top">
-        <a href="https://bsky.app/" target="_blank" rel="noopener noreferrer">
-            <i class="bi bi-bluesky"></i>
+        <a href="https://bsky.app/" target="_blank" rel="noopener noreferrer" title="Bluesky">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                <path d="M3.468 1.948C5.303 3.325 7.276 6.118 8 7.616c.725-1.498 2.698-4.29 4.532-5.668C13.855.955 16 .186 16 2.632c0 .489-.28 4.105-.444 4.692-.572 2.04-2.653 2.561-4.504 2.246 3.236.551 4.06 1.408 4.06 1.408s-1.077 1.107-2.308 1.107c-1.385 0-3.323-1.631-4.804-3.15-.316-.324-.606-.63-.852-.907-.246.277-.536.583-.852.907-1.481 1.52-3.419 3.15-4.804 3.15-1.231 0-2.308-1.107-2.308-1.107s.824-.857 4.06-1.408C2.653 9.885.572 9.364 0 7.324 0 6.835.28 3.219.444 2.632 0 .186 2.145.955 3.468 1.948Z"/>
+            </svg>
         </a>
     </div>
 
